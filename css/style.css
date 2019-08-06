@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: #fff;
+    margin: 0 240px;
+}
+
+/* design for the site logo */
+.header-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.logo {
+    width: 100px;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* design for the search and button area */
+.search-area {
+    position: relative;
+}
+
+.search-area input {
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background-color: #f1f1f1;
+    font-size: 12px;
+    width: 160px;
+    padding: 12px;
+}
+
+.search-area input:focus {
+    outline: none
+}
+
+.search-area button {
+    border: none;
+    background-color: #f1f1f1;
+    position: absolute;
+    left: 120px;
+    top: 3px;
+    cursor: pointer;
+    padding-top: 4px;
+    font-size: 21px;
+    color: #3d3d3d;
+}
+
+/* designs for the first nav */
+.first-nav {
+    display: block;
+    align-self: flex-end;
+    margin-top: 15px;
+}
+
+.links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+.links>li {
+    position: relative;
+    padding: 0 10px 5px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.links>li+li::after {
+    content: "";
+    background: #ccc;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    height: 50%;
+    width: 1px;
+}
+
+.links>li:last-child {
+    border-right: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* designs for the second navigation area */
+.sec-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sec-links {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    font-size: 12px;
+    position: relative;
+}
+
+.sec-links>li {
+    border-top: 1px solid #000000;
+    border-right: 1px solid #ffffff;
+    background-color: #282f54;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.sec-links a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* active menu for sec-nav */
+.mainMenu:first-child:active {
+    background: #f1f1f1;
+    color: #515ea1
+}
+
+/* styles for news menu */
+.mainMenu:hover {
+    background-color: #f1f1f1;
+}
+
+/* display dropdown when it is hovered on */
+.mainMenu:hover .subMenu {
+    display: block;
+}
+
+.mainMenu:hover .mainlink {
+    text-decoration: underline solid #000;
+    color: #000;
+}
+
+/* styles for sub menu */
+.subMenu {
+    display: none;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 35px;
+    padding: 25px 42px;
+    background: #f1f1f1;
+    box-shadow: -2px -1px 15px 2px rgba(0, 0, 0, 0.4);
+}
+
+.subHead {
+    text-align: start;
+    padding-bottom: 20px;
+}
+
+/* menu in the subMenu */
+.subList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    list-style: none;
+    padding: 22px 0;
+    text-align: start;
+    font-size: 15px;
+}
+
+.subList a {
+    color: #000;
+}
+
+/* underline when the links in subMenu are hovered on */
+.subList a:hover {
+    text-decoration: underline solid #000;
+}
+
+/* stlye for the last subMenu */
+.lastList {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    list-style: none;
+    padding: 22px 0;
+    text-align: start;
+    font-size: 15px;
+}
+
+.lastList a {
+    color: #000;
+}
+
+/* sub menu for lastlist */
+.sub-con-menu {
+    display: none;
+    list-style: none;
+}
+
+.country:hover .sub-con-menu {
+    display: inline-grid;
+    position: absolute;
+    list-style: none;
+    grid-template-columns: repeat(4, 125px);
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
+    left: 25%;
+    top: 14%;
+    white-space: nowrap;
+}
+
+
+/* Taking Control which is the heading area */
+.heading-area {
+    background: #f1f1f1;
+}
+
+.head-con {
+    margin: 0 240px;
+    padding: 20px 0;
+}
+
+.head-con h6 {
+    padding: 10px 0 35px;
+    color: #9b9b9b;
+}
+
+.page-head {
+    padding-bottom: 15px;
+}
+
+.page-head h1 {
+    font-size: 44px;
+    color: #262626;
+}
+
+.page-head h1,
+.page-head p {
+    margin-bottom: 17px;
+}
+
+.page-head>p {
+    padding-right: 350px;
+    font-size: 13px;
+}
+
+.page-head p:last-child {
+    margin: 0 25px;
+    color: #0a4bb7;
+}
+
+.fa-share-alt {
+    margin-right: 10px;
+}
+
+/* article styles */
+article {
+    margin: 0 240px;
+}
+
+.info {
+    margin: 20px 0;
+}
+
+.par {
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+.par:last-child {
+    margin-top: 10px;
+    padding-right: 150px;
+}
+
+.container {
+    padding: 32px 16px 0;
+}
+
+.sub-con1 {
+    display: flex;
+}
+
+.imgbox {
+    width: 20%;
+    box-shadow: 0px 0px 15px 1px rgba(41, 38, 41, 0.1);
+}
+
+img {
+    max-width: 100%;
+}
+
+.imgStory {
+    width: 65%;
+    margin: 0 40px 0 30px;
+}
+
+.storyHead {
+    margin: 5px 0 12px;
+    font-size: 17px;
+    color: #141414;
+    /* font-weight: normal; */
+}
+
+.par1 {
+    line-height: 1.6;
+}
+
+.storyBtn {
+    background: #0a4bb7;
+    width: 85px;
+    padding: 12px;
+    border: none;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.sub-con1:last-child {
+    margin: 80px 0;
+}
+
+.story2 {
+    margin-bottom: 3px;
+}
+
+/* footer section */
+footer {
+    background: #141414;
+}
+
+.fnav {
+    margin: 0 240px;
+}
+
+.fnavlist {
+    padding: 25px 0;
+}
+
+.ful {
+    display: flex;
+    list-style: none;
+}
+
+.ful>li {
+    border-right: 1px solid #fff;
+}
+
+.ful>li:last-child {
+    border-right: none;
+}
+
+.ful li>a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+}
+
+.ful li:first-child>a {
+    margin-left: 0;
+}
+
+.lpar {
+    color: #fff;
+}
+
+.lastPar {
+    padding: 30px 0;
+}
+
+.social {
+    width: 40%;
+}
+
+.wrapper {
+    display: flex;
+    list-style: none;
+}
+
+.wrapper li {
+    margin-right: 10px;
+}
