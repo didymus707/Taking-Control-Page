@@ -6,11 +6,18 @@
 }
 
 header {
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 980px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     background-color: #fff;
-    margin: 0 240px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px solid pink;
 }
 
 /* design for the site logo */
@@ -21,9 +28,10 @@ header {
 
 .logo {
     width: 100px;
+    height: 38px;
 }
 
-.first {
+.logo-area {
     display: flex;
     justify-content: space-between;
 }
@@ -63,8 +71,10 @@ header {
 /* designs for the first nav */
 .first-nav {
     display: block;
+    width: 90%;
     align-self: flex-end;
-    margin-top: 15px;
+    margin-top: 10px;
+    border: 1px solid pink;
 }
 
 .links {
@@ -128,10 +138,16 @@ header {
     cursor: pointer;
 }
 
-/* active menu for sec-nav */
-.mainMenu:first-child:active {
+/* active menu for sec-nav first-child */
+.sec-links>li:nth-child(1) {
     background: #f1f1f1;
-    color: #515ea1
+    /* color: #dfe0e6; */
+    font-weight: 400;
+}
+
+.mainMenu span>a {
+    color: #282f54;
+    font-weight: 600;
 }
 
 /* styles for news menu */
@@ -227,8 +243,10 @@ header {
 }
 
 .head-con {
-    margin: 0 240px;
-    padding: 20px 0;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 10px 15px;
 }
 
 .head-con h6 {
@@ -251,7 +269,7 @@ header {
 }
 
 .page-head>p {
-    padding-right: 350px;
+    padding-right: 30px;
     font-size: 13px;
 }
 
@@ -266,7 +284,10 @@ header {
 
 /* article styles */
 article {
-    margin: 0 240px;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .info {
@@ -339,7 +360,10 @@ footer {
 }
 
 .fnav {
-    margin: 0 240px;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .fnavlist {
@@ -382,11 +406,11 @@ footer {
     width: 40%;
 }
 
-.wrapper {
+.soc-wrapper {
     display: flex;
     list-style: none;
 }
 
-.wrapper li {
+.soc-wrapper li {
     margin-right: 10px;
 }
