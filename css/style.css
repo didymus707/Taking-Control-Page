@@ -166,7 +166,7 @@ header {
 /* styles for sub menu */
 .subMenu {
     display: none;
-    /* width: 100%; */
+    width: 100%;
     left: 0;
     position: absolute;
     top: 35px;
