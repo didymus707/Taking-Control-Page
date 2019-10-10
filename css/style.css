@@ -10,13 +10,11 @@ header {
 }
 
 .wrapper {
-    /* width: 100%; */
-    max-width: 900px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
     margin: 0 auto;
-    /* padding: 0 10px; */
 }
 
 /* design for the site logo */
@@ -70,7 +68,6 @@ header {
 /* designs for the first nav */
 .first-nav {
     display: block;
-    /* width: 90%; */
     align-self: flex-end;
     margin-top: 10px;
 }
@@ -78,8 +75,7 @@ header {
 .links {
     list-style-type: none;
     display: flex;
-    /* justify-content: flex-end; */
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .links>li {
@@ -108,6 +104,10 @@ header {
     cursor: pointer;
 }
 
+.links a:hover {
+    text-decoration: underline;
+}
+
 /* designs for the second navigation area */
 .sec-nav {
     text-align: center;
@@ -118,7 +118,7 @@ header {
     width: 100%;
     list-style-type: none;
     display: flex;
-    font-size: 12px;
+    font-size: 14px;
     position: relative;
 }
 
@@ -138,9 +138,12 @@ header {
 
 /* active menu for sec-nav first-child */
 .sec-links>li:nth-child(1) {
-    background: #f1f1f1;
-    /* color: #dfe0e6; */
+    background:#dfe0e6;
     font-weight: 400;
+}
+
+.sec-links>li:nth-child(1):hover {
+    background-color: #f1f1f1;
 }
 
 .mainMenu span>a {
@@ -148,7 +151,7 @@ header {
     font-weight: 600;
 }
 
-/* styles for news menu */
+/* styles for news menu when hovered upon */
 .mainMenu:hover {
     background-color: #f1f1f1;
 }
@@ -241,13 +244,12 @@ header {
 }
 
 .head-con {
-    width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 10px 15px;
 }
 
-.head-con h6 {
+.head-con p {
     padding: 10px 0 35px;
     color: #9b9b9b;
 }
@@ -267,10 +269,9 @@ header {
 }
 
 .page-head > p {
-    max-width: 550px;
-    padding-left: 10px;
     font-size: 13px;
-    letter-spacing: .01em;
+    letter-spacing: .03em;
+    color: #000;
 }
 
 .page-head span {
@@ -284,8 +285,7 @@ header {
 
 /* article styles */
 article {
-    width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -296,7 +296,7 @@ article {
 
 .par {
     line-height: 1.5;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .par:last-child {
@@ -307,13 +307,13 @@ article {
 /* full story section */
 .container {
     display: grid;
-    grid-template-rows: 200px;
+    grid-template-rows: auto;
     padding: 32px 16px 0;
 }
 
 .sub-con1 {
     display: grid;
-    grid-template-columns: minmax(200px, 1fr);
+    grid-template-columns: 220px auto;
 
 }
 
@@ -324,18 +324,18 @@ article {
 
 img {
     max-width: 100%;
+    /* object-fit: cover; */
 }
 
 .imgStory {
-    width: 65%;
-    margin: 0 40px 0 30px;
+    width: 100%;
+    margin: 0 30px;
 }
 
 .storyHead {
     margin: 5px 0 12px;
-    font-size: 17px;
+    font-size: 24px;
     color: #141414;
-    /* font-weight: normal; */
 }
 
 .par1 {
@@ -365,8 +365,7 @@ footer {
 }
 
 .fnav {
-    width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 15px;
 }
